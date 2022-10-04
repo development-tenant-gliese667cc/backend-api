@@ -1,4 +1,4 @@
-const { Order } = require("../models/Order");
+const { Order } = require("../models/order");
 
 exports.create = (req, res, next) => {
     const { location, apt, deliveryOption, deliveryNote, deliveryDate,
