@@ -1,11 +1,11 @@
-const { Order } = require("../models/order");
+const db = require('../databases/db');
 
 exports.create = (req, res, next) => {
     const { location, apt, deliveryOption, deliveryNote, deliveryDate,
         quantity, orderNote, cardId } = req.body;
     const orderDate = new Date();
 
-    Order.create({
+    db.order.create({
         location,
         apt,
         deliveryNote,
@@ -25,7 +25,7 @@ exports.create = (req, res, next) => {
 }
 
 exports.list = (req, res, next) => {
-    Order.findAll({
+    db.order.findAll({
         order: [['orderDate', 'DESC']]
     })
         .then(orders => {

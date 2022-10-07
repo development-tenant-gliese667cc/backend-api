@@ -1,12 +1,12 @@
 const { DataTypes } = require('sequelize');
 const connection = require('../connections/postgres');
 
-const DELIVERY_OPTIONS = {
+exports.DELIVERY_OPTIONS = {
     DELIVER_TO_DOOR: 'deliver to door',
     PICK_UP_OUTSIDE: 'pick up outside'
 }
 
-const Order = connection.define('Order', {
+exports.Order = connection.define('Order', {
     id: {
         type: DataTypes.UUIDV4,
         allowNull: false,
@@ -63,5 +63,3 @@ const Order = connection.define('Order', {
 }, {
     timestamps: false
 })
-
-module.exports = { DELIVERY_OPTIONS, Order }
