@@ -10,9 +10,4 @@ const sequelize = new Sequelize({
     dialect: 'postgres'
 });
 
-sequelize.authenticate()
-    .catch(error => {
-        throw error;
-    });
-
 module.exports = sequelize;

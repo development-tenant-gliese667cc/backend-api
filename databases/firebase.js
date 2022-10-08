@@ -1,10 +1,11 @@
-const { push, ref, set, child, get } = require('firebase/database');
+const { ref, set, child, get } = require('firebase/database');
+const { v4: uuidv4 } = require('uuid');
 const database = require('../connections/firebase');
 
 exports.order = {
     create: async (data) => {
-        const orderKey = push(child(ref(database), 'orders')).key;
-
+        const orderKey = data.id || uuidv4();
+        
         return set(ref(database, 'orders/' + orderKey), JSON.parse(JSON.stringify(data)))
             .then(async () => {
                 return get(child(ref(database), 'orders/' + orderKey))
