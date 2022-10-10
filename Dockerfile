@@ -1,7 +1,7 @@
-FROM node:16-alpine 
+FROM node:18-alpine 
 WORKDIR /app
 COPY . .
-RUN npm ci 
+RUN npm install
 ENV NODE_ENV production
 EXPOSE 3001
-CMD [ "node", "server" ]
+CMD [ "npm", "run", "app" ]

@@ -20,7 +20,7 @@ exports.create = (req, res, next) => {
             res.status(201).json({ orderId: order.id, deliveryDate: deliveryDate });
         })
         .catch(error => {
-            res.status(400).json({ message: 'Failed to save the order' });
+            res.status(400).json({ message: error });
         });
 }
 
