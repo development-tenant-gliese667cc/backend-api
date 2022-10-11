@@ -11,24 +11,21 @@ module.exports = {
      */
     await queryInterface.createTable("Orders", {
       id: {
-        allowNull: true,
+        allowNull: false,
         primaryKey: true,
-        type: Sequelize.UUID
+        type: Sequelize.UUID,
       },
 
       location: {
         type: Sequelize.STRING,
-        allowNull: true,
       },
 
       apt: {
         type: Sequelize.STRING,
-        allowNull: true,
       },
 
       deliveryOption: {
         type: Sequelize.STRING,
-        allowNull: true,
       },
 
       deliveryNote: {
@@ -37,17 +34,14 @@ module.exports = {
 
       orderDate: {
         type: Sequelize.DATE,
-        allowNull: true,
       },
 
       deliveryDate: {
         type: Sequelize.DATE,
-        allowNull: true,
       },
 
       quantity: {
         type: Sequelize.INTEGER,
-        allowNull: true,
       },
 
       orderNote: {
@@ -56,7 +50,6 @@ module.exports = {
 
       cardId: {
         type: Sequelize.STRING,
-        allowNull: true,
       },
     });
   },
