@@ -13,22 +13,19 @@ module.exports = {
       id: {
         allowNull: false,
         primaryKey: true,
-        type: Sequelize.UUID
+        type: Sequelize.UUID,
       },
 
       location: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
 
       apt: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
 
       deliveryOption: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
 
       deliveryNote: {
@@ -37,17 +34,14 @@ module.exports = {
 
       orderDate: {
         type: Sequelize.DATE,
-        allowNull: false,
       },
 
       deliveryDate: {
         type: Sequelize.DATE,
-        allowNull: false,
       },
 
       quantity: {
         type: Sequelize.INTEGER,
-        allowNull: false,
       },
 
       orderNote: {
@@ -56,7 +50,6 @@ module.exports = {
 
       cardId: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
     });
   },
