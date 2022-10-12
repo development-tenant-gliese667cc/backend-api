@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "app": "node migrate.js && node server"
+    "app": "node migrate.js && node server",
+    "firebase": "node migrate.js && node server"
+    
   },
   "author": "",
   "license": "ISC",
