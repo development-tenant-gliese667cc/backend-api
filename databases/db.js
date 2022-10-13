@@ -9,7 +9,12 @@ switch (process.env.DATA_PROVIDER) {
         const firebase = require('./firebase');
         module.exports = firebase;
         break;
+    case 'firestore':
+        const firestore = require('./firestore');
+        module.exports = firestore;
+        break;
     case 'all':
+        // This option is broken. No longer use it
         const all = require('./all');
         module.exports = all;
         break;

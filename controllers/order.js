@@ -32,6 +32,6 @@ exports.list = (req, res, next) => {
             res.status(200).json({ orders });
         })
         .catch(error => {
-            res.status(500).json({ message: 'Got an unexpected error' });
+            res.status(500).json({ message: error });
         })
 }
