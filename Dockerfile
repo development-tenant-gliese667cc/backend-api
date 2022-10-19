@@ -4,4 +4,4 @@ COPY . .
 RUN npm install
 ENV NODE_ENV production
 EXPOSE 3001
-CMD [ "npm", "run", "firebase" ]
+CMD [ "npm", "run", "postgres" ]
