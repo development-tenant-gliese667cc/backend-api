@@ -1,8 +1,11 @@
 name: Publish Docker Image to ghcr
 
 on:
+  push:
+  pull_request:
+    types: [closed]
   release:
-    types: [published]
+    types: [created]
 
 jobs:
   build_tag_push_to_ghcr:
