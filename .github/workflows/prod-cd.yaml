@@ -12,3 +12,4 @@ jobs:
     with:
       ENV: 'prod'
       CREATE_PR: true
+
