@@ -19,7 +19,12 @@
     "pg": "^8.8.0",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.23.2",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "@opentelemetry/sdk-node":"^0.53.0",
+    "@opentelemetry/api":"1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "0.50.0",
+    "@opentelemetry/sdk-metrics":"1.26.0",
+    "@opentelemetry/sdk-trace-node":"1.26.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
