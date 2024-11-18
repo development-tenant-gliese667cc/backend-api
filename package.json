@@ -15,7 +15,7 @@
     "dotenv": "^16.0.2",
     "dotenv-vault": "^1.13.10",
     "express": "^4.18.1",
-    "firebase": "^9.11.0",
+    "firebase": "^10.9.0",
     "pg": "^8.8.0",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.23.2",
